@@ -1,0 +1,14 @@
+version: '2'
+services:
+  node_redux:
+    image: node:latest
+    tty: true
+    volumes:
+      - './../app:/usr/local/app'
+    working_dir: '/usr/local/app'
+    networks:
+      - redux_playground
+
+networks:
+  redux_playground:
+    driver: bridge
