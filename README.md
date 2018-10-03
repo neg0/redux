@@ -1,4 +1,4 @@
-# Redux Playground
+# Flux & Redux Playground
 
 This is a playground to learn redux!
 

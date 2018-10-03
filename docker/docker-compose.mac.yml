@@ -4,10 +4,10 @@ services:
     image: node:latest
     tty: true
     volumes:
-      - './../app:/usr/local/app:delegated'
+      - './..:/usr/local/app:delegated'
     working_dir: '/usr/local/app'
     networks:
-    - redux_playground
+      - redux_playground
 
 networks:
   redux_playground:
